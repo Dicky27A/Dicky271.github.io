@@ -50,6 +50,7 @@
         border: 2px solid black;
         border-radius: 20px;
         left:50%;
+        z-index: 100;
         transform: translateX(-50%);
         background-color: rgba(255, 255, 255, 0.893);
     }
@@ -158,6 +159,7 @@
         padding: 10px;
         rotate: -90deg;
         border-radius: 30px;
+        cursor: cell;
         padding: 20px 12px 20px 20px;
     }
 
@@ -192,6 +194,14 @@
         font-family: monospace;
     }
 
+    .projek {
+        margin-top: 20px;
+    }
+
+    .projek-container {
+        padding-bottom: 10px;
+    }
+
     .projek .judul {
         text-align: center;
         font-family: "heading1";
@@ -204,47 +214,115 @@
     }
 
     .projek-1 {
-        margin-bottom: 40px;
-        padding: 200px;
-        width: 80vw;
-        border-radius: 20px;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.285);
+        width: 80vw; /* Lebar dari projek-1 */
+        height: 80vh; /* Tinggi dari projek-1 */
+        border-radius: 20px; /* Radius border dari projek-1 */
+        margin-bottom: 30px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.285); /* Shadow dari projek-1 */
+        overflow: hidden; /* Pastikan semua konten tetap dalam batas */
+        border: 2px solid rgb(101, 134, 141);
+        cursor: cell;
     }
 
     .projek-1 h2 {
         font-family: "heading1";
-        text-align: center;
         color: #ffffff;
-    }
-
-    .projek-1 img {
+        z-index: 1;
         cursor: pointer;
-        width: 30px;
     }
 
-    .Fotografi {
+    .gambar1 {
         background-image: url('asset/foto/kamera.jpeg');
         background-size: cover; /* Pastikan gambar menutupi seluruh elemen */
         background-position: center; /* Pusatkan gambar */
         background-repeat: no-repeat; /* Jangan ulangi gambar */
-        border: 2px solid rgb(125, 109, 109);
+        width: 100%; /* Lebar penuh dari container projek-1 */
+        height: 100%; /* Tinggi penuh dari container projek-1 */
+        position: relative;
+        filter: blur(3px);
+        z-index: -1;
     }
-    .Vidiografi {
+
+    .Fotografi h2 {
+        position: absolute;
+        z-index: 2;
+        border: 2px solid white;
+        background-color: rgb(195, 231, 219);
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 15px;
+        box-shadow: 0 0 9px 0px black;
+        padding: 5px 10px;
+        border-radius: 14px;
+    }
+
+    .Vidiografi h2 {
+        position: absolute;
+        z-index: 2;
+        border: 2px solid white;
+        background-color: rgb(195, 231, 219);
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 15px;
+        box-shadow: 0 0 9px 0px black;
+        padding: 5px 10px;
+        border-radius: 14px;
+    }
+
+    .Desaingrafis h2 {
+        position: absolute;
+        z-index: 2;
+        border: 2px solid white;
+        background-color: rgb(195, 231, 219);
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 15px;
+        box-shadow: 0 0 9px 0px black;
+        padding: 5px 10px;
+        border-radius: 14px;
+    }
+    .Coding h2 {
+        position: absolute;
+        z-index: 2;
+        border: 2px solid white;
+        background-color: rgb(195, 231, 219);
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 15px;
+        box-shadow: 0 0 9px 0px black;
+        padding: 5px 10px;
+        border-radius: 14px;
+    }
+
+    .gambar2 {
         background-image: url('asset/foto/vidio.jpeg');
         background-size: cover; /* Pastikan gambar menutupi seluruh elemen */
         background-position: center; /* Pusatkan gambar */
         background-repeat: no-repeat; /* Jangan ulangi gambar */
-        border: 2px solid rgb(125, 109, 109);
+        width: 100%; /* Lebar penuh dari container projek-1 */
+        height: 100%; /* Tinggi penuh dari container projek-1 */
+        z-index: 1;
+        filter: blur(3px);
     }
-    .Desaingrafis {
+    .gambar3 {
         background-image: url('asset/foto/desain.jpeg');
         background-size: cover; /* Pastikan gambar menutupi seluruh elemen */
-        border: 2px solid rgb(125, 109, 109);
+        background-position: center; /* Pusatkan gambar */
+        background-repeat: no-repeat; /* Jangan ulangi gambar */
+        width: 100%; /* Lebar penuh dari container projek-1 */
+        height: 100%; /* Tinggi penuh dari container projek-1 */
+        z-index: 1;
+        filter: blur(3px);
     }
-    .Coding {
+    .gambar4 {
         background-image: url('asset/foto/coding.png');
         background-size: cover; /* Pastikan gambar menutupi seluruh elemen */
-        border: 2px solid rgb(125, 109, 109);
+        background-position: center; /* Pusatkan gambar */
+        background-repeat: no-repeat; /* Jangan ulangi gambar */
+        width: 100%; /* Lebar penuh dari container projek-1 */
+        height: 100%; /* Tinggi penuh dari container projek-1 */
+        z-index: 1;
+        filter: blur(3px);
     }
 
     #footer {
